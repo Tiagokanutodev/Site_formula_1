@@ -1,0 +1,209 @@
+*
+{
+    margin: 0;
+    padding: 0;                                         /*reset*/
+    box-sizing: border-box;
+}
+
+
+header,
+section h2,
+section h3,
+form button
+{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: normal;
+}
+
+
+body,
+input,
+textarea
+{
+    font-family: 'Anton', sans-serif;
+}
+
+
+body
+{
+    background: rgb(209, 209, 209);            /*cor de fundo*/     
+}
+
+
+header
+{
+    padding: 16px 0;                                   /*espaçamento interno*/
+    background-color:rgb(0, 0, 0);              /*cor d fundo na tag header*/
+    color: #ff1f1f;                                /*cor do cabecalho F1*/
+}
+
+
+header nav li
+{
+    display: inline;                                  /*deixa os links um ao lado do outro*/
+    margin-left: 16px;                                /*margin para esquerda*/
+    font-size: 20px;                                  /*fonte do tamanho 24 (links)*/   
+}
+
+
+header nav li a
+{
+    color: #ff1f1f;                                 /*deixa os links branco*/
+    text-decoration: none;                           /*removendo o _ dos links*/
+}
+
+
+.container
+{
+    max-width: 1280px;                                /*largura maxima*/
+    width: 100%;                                      /*largura 100%*/
+    margin: 0 auto;
+}
+
+
+header .container,
+section .container                                    /*mandei as logos para o canto direito */
+{
+    display: flex;                                    /*deixa os links do lado do cabeçalho*/   
+    align-items: center;                              /*para centralizalos na vertical*/ 
+    justify-content: space-between;                   /*para deixar o titulo no mesmo lugae e jogar os links para extrema direita*/ 
+}
+
+
+.brands-list img
+{
+    height: 40px;                                     /*estou dizendo q as imagens dentro da class brand-list deven ter 24px (tamanho da foto do logo)*/
+}
+
+
+.brands-list li
+{
+    display: inline;                                  /*para as logos ficarem lado a lado*/
+    margin-right: 8px;                                /*espaçamento nas logos*/
+}
+
+
+section .container
+{
+    align-items: flex-start;                          /*joguei os loren para direita a cima*/
+}
+
+
+section
+{
+    padding: 24px 0;                                 /*abrie um espaço entre o cabecalho e a foto F1*/
+}
+
+
+section h2
+{
+    margin-bottom: 16px;                            /*aqui dei espaço entre sobre a loja e o loren*/  
+    
+}
+
+
+section
+{
+    color: rgb(0, 0, 0);
+}
+
+
+section p
+{
+    margin-bottom: 8px;                            /*espaço no meio dos dois lorens*/
+    color: black;    
+}
+
+
+.store-front                                        /*class adicionada para corrigir*/
+{
+    margin-right: 32px;                            /*abrie margin entre a imagem F1 e os loren (mais tbm afstou as logos)*/
+}
+
+
+.social-links img
+{
+    height: 24px;                                  /*diminuindo as fotos de patrocinio*/
+}
+
+
+.social-links li 
+{
+    display: inline;                               /*para deixar os links lado a lado*/
+    margin: 3px;
+}
+
+
+.social-links li a
+{
+    text-decoration: none;                        /*tirar a sujeirinha*/
+}
+
+
+#contact .container
+{
+    display: block;
+}
+
+
+.contact-methods
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+form input,
+form textarea,
+form button
+{
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;                                     /*almentei o tamanho dos blocos pra digitar*/
+}
+
+
+form textarea
+{
+    resize: none;                                     /*para limitar o botao (sua mensagem)*/
+    height: 150px;                                    /*almentei a caixa de mensagen*/
+}
+
+
+section h3 
+{
+    margin-bottom: 16px;
+    color: black;
+}
+
+
+form button
+{
+    background-color: rgb(0, 0, 0);                /*botao preto*/
+    color: #ff1f1f;                                /*nome dentro vermelho*/ 
+    border: none;                                    /*sem borda*/ 
+    cursor: pointer;                                 /*para surgir a maozinha no botao enviar*/ 
+}
+
+
+form button:hover
+{
+    background-color: rgb(26, 26, 26);
+}
+
+
+
+input:focus,
+textarea:focus
+{
+    outline-color:  rgb(27, 27, 27);
+}
+
+
+footer p                                            /*barra do fundo do site*/
+{
+    background-color: rgb(0, 0, 0);
+    color: #ff1f1f;
+    padding: 16px 0;    
+}
